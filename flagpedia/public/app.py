@@ -1,0 +1,1 @@
+../challenge/flagpedia/app/app.py

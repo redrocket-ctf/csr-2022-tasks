@@ -1,0 +1,32 @@
+body {
+    background-color: #101010;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p {
+    width: 50%;
+}
+
+.root_site {
+    background-color: aliceblue;
+    border-radius: 20px;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10%;
+    margin-top: 10%;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.container {
+    border-style: solid;
+    border-radius: 5px;
+    border-color: midnightblue;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 1em;
+}

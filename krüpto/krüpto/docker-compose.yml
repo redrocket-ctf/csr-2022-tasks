@@ -1,0 +1,30 @@
+version: '3.8'
+
+x-task-meta:
+  name: LotteryJava
+  points: 200
+  ports:
+    - "desc": service
+      "host": 26001
+      "guest": 4334
+  category: Web
+  downloads:
+    "src": "Server.java"
+  tags:
+    - java
+    - crypto
+    - ecc
+    - cry
+  flag: flag{FlauschigeLuecke}
+  desc: |
+    I've implemented an especially hardend [signature verification]({DL_src}), connect via netcat:
+
+    `nc {HOST} {PORT_4334}`
+
+    We even launched a 31337 bug bounty program, rewarding hackers with flags.
+
+services:
+  xinetd:
+    build: ./docker/
+    ports:
+        - "26001:4334"

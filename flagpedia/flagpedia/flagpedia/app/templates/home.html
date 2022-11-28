@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+     <div class="row row-cols-1 row-cols-md-4 g-4">
+
+     {% for country in countries %}
+         <div class="col">
+            <div class="card">
+              <img style="max-width: 100%; border: 2px solid" src="/static/{{ country }}.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">{{ country|capitalize }}</h5>            <ul class="list-group list-group-flush">
+                  <li class="list-group-item text-end">Free Article</li>
+                  <li class="list-group-item text-end">
+                    <a class="btn btn-primary" href="/info/{{ country }}">To Flag Article</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+     {% endfor %}
+
+     {% for premium_flag in premium_flags %}
+         <div class="col">
+            <div class="card">
+              <img style="max-width: 100%; border: 2px solid" src="/static/{{ premium_flag }}.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">{{ premium_flag }}</h5>            <ul class="list-group list-group-flush">
+                  <li class="list-group-item text-end"><strong>Premium</strong> Article</li>
+                  <li class="list-group-item text-end">
+                    <a class="btn btn-primary" href="/premium-info/{{ premium_flag }}">To Flag Article</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+     {% endfor %}
+
+    </div>
+{% endblock %}

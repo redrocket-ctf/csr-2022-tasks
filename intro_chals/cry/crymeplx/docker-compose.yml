@@ -1,0 +1,7 @@
+version: '3.8'
+
+services:
+  xinetd:
+    build: ./service/
+    ports:
+        - "2734:4321"

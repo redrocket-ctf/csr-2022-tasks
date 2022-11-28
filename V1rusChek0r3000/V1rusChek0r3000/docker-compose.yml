@@ -1,0 +1,24 @@
+version: '3.8'
+
+x-task-meta:
+  name: VirusCheck0r3000
+  points: 50
+  ports:
+    - "desc": service
+      "host": 15423
+      "guest": 80
+  category: Web
+  tags:
+    - race
+    - condition
+    - web
+    - rce
+  flag: flag{clamavisslow}
+  desc: |
+    Check your files for viruses: [Webapp](http://{HOST}:{PORT_80}/)
+services:
+  web:
+    build: ./php
+    ports:
+      - "15423:80"
+    restart: unless-stopped

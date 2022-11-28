@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>{{ country|capitalize }}</h1>
+    <div class="card">
+  <img class="card-img-top" src="/static/{{ country }}.png" alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text">{{ info }}</p>
+  </div>
+</div>
+{% endblock %}

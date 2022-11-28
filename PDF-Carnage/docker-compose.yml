@@ -1,0 +1,26 @@
+version: "3.9"
+services:
+  node:
+    build: "./Docker-PDF-Carnage-Node"
+    networks:
+      carnageNetwork:
+        ipv4_address: 172.16.5.54
+    hostname: pdf-carnage-node
+  flask:
+    build: "./Docker-PDF-Carnage-Flask"
+    ports:
+      - "5000:5000"
+    networks:
+      carnageNetwork:
+        ipv4_address: 172.16.5.55
+    hostname: pdf-carnage-flask
+    extra_hosts:
+      - "nodeapi:172.16.5.54"
+
+networks:
+  carnageNetwork:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: "172.16.5.0/24"

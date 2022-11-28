@@ -1,0 +1,13 @@
+service kindergarten
+{
+# Our service is not in /etc/hosts
+type         = UNLISTED
+protocol     = tcp
+socket_type  = stream
+port         = 4334
+server       = /bin/bash
+server_args  = /opt/start.sh
+user         = chal
+wait         = no
+env = PATH=/
+}

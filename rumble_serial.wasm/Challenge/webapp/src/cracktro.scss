@@ -1,0 +1,142 @@
+html,
+body,
+.wrapper,
+ul {
+  display:block;
+  height: 100%;
+  width:100%;
+  overflow: hidden;
+  position: absolute;
+  top:0px;
+  z-index:-1;
+  text-align:center;
+  margin:0!important;
+}
+
+
+.text-container {
+    font-family: wallpoet, fantasy;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-name: textScroll;
+     animation-timing-function: linear;
+    display: inline-block;
+    color: red;
+    font-size: 5em;
+    font-weight: bold;
+    left: 0;
+    position: absolute;
+    text-align: left;
+    top: 50%;
+    transform: translate3d(100%,0,0);
+     white-space:nowrap;
+    text-shadow:
+     .2vw .5vw 0 #660000,
+     -.2vw -.5vw 0 white;
+   
+    span {
+      animation-iteration-count: infinite;
+      animation-duration: 2.5s;
+      animation-name: letterPos;
+      display: inline-block;
+      &:nth-child(1) {
+        animation-delay: 0;
+      }
+      &:nth-child(2) {
+        animation-delay: 100ms;
+      }
+      &:nth-child(3) {
+        animation-delay: 200ms;
+      }
+      &:nth-child(4) {
+        animation-delay: 300ms;
+      }
+      &:nth-child(5) {
+        animation-delay: 400ms;
+      }
+      &:nth-child(6) {
+        animation-delay: 500ms;
+      }
+      &:nth-child(7) {
+        animation-delay: 600ms;
+      }
+      &:nth-child(8) {
+        animation-delay: 700ms;
+      }
+      &:nth-child(9) {
+        animation-delay: 800ms;
+      }
+      &:nth-child(10) {
+        animation-delay: 900ms;
+      }
+      &:nth-child(11) {
+        animation-delay: 1000ms;
+      }
+      &:nth-child(12) {
+        animation-delay: 1100ms;
+      }
+      &:nth-child(13) {
+        animation-delay: 1200ms;
+      }
+      &:nth-child(14) {
+        animation-delay: 1300ms;
+      }
+      &:nth-child(15) {
+        animation-delay: 1400ms;
+      }
+      &:nth-child(16) {
+        animation-delay: 1500ms;
+      }
+      &:nth-child(17) {
+        animation-delay: 1600ms;
+      }
+      &:nth-child(18) {
+        animation-delay: 1700ms;
+      }
+      &:nth-child(19) {
+        animation-delay: 1800ms;
+      }
+      &:nth-child(20) {
+        animation-delay: 1900ms;
+      }
+      &:nth-child(21) {
+        animation-delay: 2000ms;
+      }
+      &:nth-child(22) {
+        animation-delay: 2100ms;
+      }
+          &:nth-child(23) {
+        animation-delay: 1100ms;
+      }
+      &:nth-child(24) {
+        animation-delay: 1200ms;
+      }
+      &:nth-child(25) {
+        animation-delay: 1300ms;
+      }
+      &:nth-child(26) {
+        animation-delay: 1400ms;
+      }
+      &:nth-child(27) {
+        animation-delay: 1500ms;
+      }
+      &:nth-child(28) {
+        animation-delay: 1600ms;
+      }
+      &:nth-child(29) {
+        animation-delay: 1700ms;
+      }
+      &:nth-child(30) {
+        animation-delay: 1800ms;
+      }
+      &:nth-child(31) {
+        animation-delay: 1900ms;
+      }
+      &:nth-child(32) {
+        animation-delay: 2000ms;
+      }
+      &:nth-child(33) {
+        animation-delay: 2100ms;
+      }
+    }
+  }

@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  web:
+    build: flagpedia
+    ports:
+     - "32161:8000"
+    environment:
+      "SEC_KEY": "c73d59fc479e5a55"
+    volumes:
+      - ./flagpedia/app/infos:/usr/src/app/infos
+      - ./flagpedia/app/static:/usr/src/app/static

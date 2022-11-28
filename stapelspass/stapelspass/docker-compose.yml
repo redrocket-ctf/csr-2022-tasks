@@ -1,0 +1,29 @@
+version: '3.8'
+
+x-task-meta:
+  name: StapelSpass
+  points: 200
+  ports:
+    - "desc": service
+      "host": 55432
+      "guest": 4000
+  category: Cry/Rev
+  downloads:
+    "src": "src/source.zip"
+  tags:
+    - rev
+    - stack
+    - chacha20
+    - leak
+  flag: CSR{InsaneInFRAUXIPAUXIBBINGOOO}
+  desc: |
+    We developed an awes0me cloud encryption tool.
+    It uses 256 bit security!
+
+    [Source]({DL_src})
+
+services:
+  xinetd:
+    build: ./docker/
+    ports:
+        - "55432:4000"

@@ -1,0 +1,30 @@
+version: '3.8'
+
+x-task-meta:
+  name: AESAAS
+  points: 100
+  ports:
+    - "desc": service
+      "host": 58792
+      "guest": 1337
+  category: Web
+  tags:
+    - filter
+    - web
+    - command
+    - logic
+  flag: flag{LOOKATMYFLAG_MYFLAGISAMAZING}
+  downloads:
+    "code": "webapp/app/api.py"
+  desc: |
+    Our new AES As A Service API is awesome! 
+    
+    Try it, with: `curl localhost:58792/encrypt --data-binary @myfile -H "X-AES-KEY: 5468617473206D79204B756E6720467A"`
+
+    [Code]({DL_code})
+
+services:
+  web:
+    build: webapp
+    ports:
+      - "58792:1337"

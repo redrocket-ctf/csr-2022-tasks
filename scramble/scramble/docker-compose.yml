@@ -1,0 +1,7 @@
+version: '3.8'
+
+services:
+  xinetd:
+    build: ./docker/
+    ports:
+        - "2568:4334"
